@@ -1,0 +1,8 @@
+{
+    "contents": "",
+    "embeds": [{
+        "title": "Placeholder for ${response_id}",
+        "description": "Response not found: `${response_id}`\nYou should never see this. If you do, please let a member of management know!",
+        "color": "#ff0000"
+    }]
+}
