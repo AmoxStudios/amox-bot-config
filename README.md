@@ -1,3 +1,5 @@
+## Yes, I know the repository is public.
+
 | id | variables | 
 |----|-----------|
 |  ticket_open_thread_message  |  ticket_channel, thread, freelancer_id  |
