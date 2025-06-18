@@ -12,7 +12,7 @@ options = {
     avatar: 'https://cdn.discordapp.com/icons/1227329814307016814/a_30efe06fa93052036341a24931b34439.gif',
     verified: false,
     noUser: false,
-    data: mull,
+    data: null,
     guiTabs: [],
     useJsonEditor: false,
     reverseColumns: false,
