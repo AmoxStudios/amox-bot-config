@@ -1,0 +1,35 @@
+{
+    "embeds": [
+        {
+            "title": "AMOX Transcripts",
+            "fields": [
+                {
+                    "name": "Freelancer",
+                    "value": "{{ ticket.freelancer_id }}",
+                    "inline": true
+                },
+                {
+                    "name": "Ticket",
+                    "value": "<#{{ ticket.id }}> \n`({{ ticket.id }})`",
+                    "inline": true
+                },
+                {
+                    "name": "Transcript",
+                    "value": "{{ transcript_url }}",
+                    "inline": false
+                }
+            ],
+            "thumbnail": {
+                "url": "https://i.ibb.co/dw69gQHY/White.png"
+            },
+            "image": {
+                "url": "{{ images.DM_Transcripts }}"
+            },
+            "footer": {
+                "icon_url": "https://i.ibb.co/5xcMBgTq/Logo-Red.png",
+                "text": "AMOX Studios s.r.o."
+            },
+            "color": 14631519
+        }
+    ]
+}
