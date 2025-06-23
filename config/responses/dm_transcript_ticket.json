@@ -20,13 +20,13 @@
                 }
             ],
             "thumbnail": {
-                "url": "https://i.ibb.co/dw69gQHY/White.png"
+                "url": "{{ images.Logo_Transparent_White }}"
             },
             "image": {
                 "url": "{{ images.DM_Transcripts }}"
             },
             "footer": {
-                "icon_url": "https://i.ibb.co/5xcMBgTq/Logo-Red.png",
+                "icon_url": "{{ images.Logo_Full_Red }}",
                 "text": "AMOX Studios s.r.o."
             },
             "color": 14631519
