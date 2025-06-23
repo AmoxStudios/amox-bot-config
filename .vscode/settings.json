@@ -1,0 +1,18 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#2F1284",
+        "titleBar.activeBackground": "#4219B9",
+        "titleBar.activeForeground": "#FCFBFE"
+    },
+    "html.format.indentInnerHtml": true,
+    "editor.codeActionsOnSave": {
+
+    },
+    "emmet.includeLanguages": {
+        "jinja-html": "html"
+    },
+    "files.associations": {
+        "*.html": "jinja-html",
+        ".env*": "properties"
+    }
+}

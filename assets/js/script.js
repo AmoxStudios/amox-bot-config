@@ -85,11 +85,6 @@ const decodeJson = data => {
     return typeof jsonData === 'string' ? JSON.parse(jsonData) : jsonData;
 };
 
-// IMPORTANT: jsonToBase64 and base64ToJson are subject to removal.
-// Use encodeJson and decodeJson instead, they are aliases.
-let jsonToBase64 = encodeJson, base64ToJson = decodeJson;
-
-
 const toRGB = (hex, reversed, integer) => {
     if (reversed) return '#' + hex.match(/\d+/g).map(x => parseInt(x).toString(16).padStart(2, '0')).join('');
     if (integer) return parseInt(hex.match(/\d+/g).map(x => parseInt(x).toString(16).padStart(2, '0')).join(''), 16);
