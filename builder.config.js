@@ -60,25 +60,7 @@ function renderList(items) {
         dropdownList.appendChild(li);
     });
 }
-let isDirty = false;
 document.addEventListener("DOMContentLoaded", () => {
-    const waitForEditor = setInterval(() => {
-        if (window.CodeMirrorEditor) {
-            window.CodeMirrorEditor.on("change", () => {
-                isDirty = true;
-            });
-            clearInterval(waitForEditor);
-        }
-    }, 200);
-
-
-    window.addEventListener("beforeunload", (e) => {
-        if (isDirty) {
-            e.preventDefault();
-            alert("You have unsaved changes.")
-        }
-    });
-
 
     const searchInput = document.getElementById("searchInput");
     const dropdownList = document.getElementById("dropdownList");
@@ -200,7 +182,11 @@ document.addEventListener("DOMContentLoaded", () => {
         a.href = URL.createObjectURL(blob);
         a.download = filename + ".json";
         a.click();
-        isDirty = false;
         URL.revokeObjectURL(a.href);
     });
+});
+
+window.addEventListener("beforeunload", (e) => {
+    e.preventDefault();
+    e.returnValue = '';
 });

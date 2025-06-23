@@ -774,7 +774,6 @@ addEventListener('DOMContentLoaded', () => {
                     const embedObj = jsonObject.embeds[index] ??= {};
 
                     if (field) {
-                        console.log(field)
                         const fieldIndex = Array.from(fields.children).indexOf(field);
                         const jsonField = embedObj.fields[fieldIndex];
                         const embedFields = document.querySelectorAll('.container>.embed')[index]?.querySelector('.embedFields');
@@ -1239,38 +1238,6 @@ addEventListener('DOMContentLoaded', () => {
     for (const block of document.querySelectorAll('.markup pre > code'))
         hljs.highlightBlock(block);
 
-    document.querySelector('.opt.gui').addEventListener('click', () => {
-        if (lastGuiJson && lastGuiJson !== JSON.stringify(json, null, 4))
-            buildGui();
-
-        lastGuiJson = false
-        activeFields = null;
-
-        document.body.classList.add('gui');
-        if (pickInGuiMode) {
-            pickInGuiMode = false;
-            togglePicker();
-        }
-    })
-
-    document.querySelector('.opt.json').addEventListener('click', () => {
-        const emptyEmbedIndex = indexOfEmptyGuiEmbed(false);
-        if (emptyEmbedIndex !== -1)
-            // Clicked GUI tab while a blank embed is added from GUI.
-            return error(gui.querySelectorAll('.item.guiEmbedName')[emptyEmbedIndex].innerText.split(':')[0] + ' should not be empty.', '3s');
-
-        const jsonStr = JSON.stringify(json, null, 4);
-        lastGuiJson = jsonStr;
-
-        document.body.classList.remove('gui');
-        editor.setValue(jsonStr === '{}' ? '{\n\t\n}' : jsonStr);
-        editor.refresh();
-        editor.focus();
-
-        activeFields = document.querySelectorAll('.gui > .item.active');
-        if (document.querySelector('section.side1.low'))
-            togglePicker(true);
-    })
 
     document.querySelector('.clear').addEventListener('click', () => {
         json = {};
