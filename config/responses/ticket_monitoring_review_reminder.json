@@ -1,0 +1,34 @@
+{
+    "content": "<@{{ticket.customer_id}}>",
+    "embeds": [
+        {
+            "thumbnail": {
+                "url": "{{ images.ticket_monitoring_review_reminder_Icon }}"
+            },
+            "footer": {
+                "text": "AMOX Studios s.r.o.",
+                "icon_url": "{{ images.Logo_Full_Red }}"
+            },
+            "title": "Reminder",
+            "color": 15750742,
+            "fields": [
+                {
+                    "name": "Order Ticket",
+                    "value": "<#{{ ticket.id }}>\n`{{ ticket.id }}`",
+                    "inline": false
+                },
+                {
+                    "name": "Order Deadline",
+                    "value": "{{ ticket.deadline}}",
+                    "inline": false
+                },
+                {
+                    "name": "Order Status",
+                    "value": "{{ ticket.current_status }}",
+                    "inline": false
+                }
+            ],
+            "description": "Hey <@{{ticket.customer_id}}>, please review the content provided to you by the freelancer. The freelancer cannot be paid out until the order is either marked as completed or there are any additional fixes required. \n\nIf no option gets selected, according to the AMOX Terms of Service, the order will be automatically marked as completed."
+        }
+    ]
+}
