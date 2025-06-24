@@ -1,0 +1,39 @@
+{
+    "content": "{{ ticket.name }} | {{ ticket.id }}",
+    "embeds": [
+        {
+            "footer": {
+                "text": "AMOX Studios s.r.o.",
+                "icon_url": "{{ images.Logo_Full_Red }}"
+            },
+            "title": "Ticket Transcript",
+            "color": 5697627,
+            "description": "The transcript of the ticket has been successfully sent to the client.",
+            "thumbnail": {
+                "url": "{{ images.transcript_ticket_channel_successful_dm_Icon }}"
+            },
+            "fields": [
+                {
+                    "name": "Ticket Name",
+                    "value": "{{ ticket.name }}",
+                    "inline": true
+                },
+                {
+                    "name": "Ticket Link",
+                    "value": "{{ ticket.mention }}",
+                    "inline": true
+                },
+                {
+                    "name": "Ticket ID",
+                    "value": "{{ ticket.id }}",
+                    "inline": true
+                },
+                {
+                    "name": "Transcript URL",
+                    "value": "{{ transcript_url }}",
+                    "inline": false
+                }
+            ]
+        }
+    ]
+}
