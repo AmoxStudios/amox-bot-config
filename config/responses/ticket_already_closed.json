@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Ticket Already Closed",
+            "color": 15750742,
+            "description": "The ticket has already been closed before.\nIt cannot be closed again.",
+            "thumbnail": {
+                "url": "{{ images.ticket_already_closed_Icon }}"
+            }
+        }
+    ]
+}
