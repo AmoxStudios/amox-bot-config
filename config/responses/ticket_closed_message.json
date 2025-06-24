@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Ticket Closed",
+            "color": 5697627,
+            "description": "The ticket has successfully been closed.\nThank you!",
+            "thumbnail": {
+                "url": "{{ images.ticket_closed_message_Icon }}"
+            }
+        }
+    ]
+}
