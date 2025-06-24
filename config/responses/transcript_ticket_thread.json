@@ -1,0 +1,39 @@
+{
+    "content": "{{ thread.name }} | {{ thread.id }}",
+    "embeds": [
+        {
+            "footer": {
+                "text": "AMOX Studios s.r.o.",
+                "icon_url": "{{ images.Logo_Full_Red }}"
+            },
+            "title": "Thread Transcript",
+            "color": 15750742,
+            "description": "The transcript of the thread has been successfully saved.",
+            "thumbnail": {
+                "url": "{{ images.ticket_closed_Icon }}"
+            },
+            "fields": [
+                {
+                    "name": "Thread Name",
+                    "value": "{{ thread.name }}",
+                    "inline": true
+                },
+                {
+                    "name": "Thread Link",
+                    "value": "{{ thread.mention }}",
+                    "inline": true
+                },
+                {
+                    "name": "Thread ID",
+                    "value": "{{ thread.id }}",
+                    "inline": true
+                },
+                {
+                    "name": "Transcript URL",
+                    "value": "{{ transcript_url }}",
+                    "inline": false
+                }
+            ]
+        }
+    ]
+}
