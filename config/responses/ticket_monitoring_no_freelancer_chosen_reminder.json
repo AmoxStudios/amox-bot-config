@@ -3,14 +3,14 @@
     "embeds": [
         {
             "thumbnail": {
-                "url": "{{ images.ticket_monitoring_payment_reminder_Icon }}"
+                "url": "{{ images.ticket_monitoring_no_freelancer_chosen_reminder_Icon }}"
             },
             "footer": {
                 "text": "AMOX Studios s.r.o.",
                 "icon_url": "{{ images.Logo_Full_Red }}"
             },
-            "title": "Payment Reminder",
-            "color": 15462486,
+            "title": "Freelancer Selection Reminder",
+            "color": 15750742,
             "fields": [
                 {
                     "name": "Order Ticket",
@@ -23,7 +23,7 @@
                     "inline": false
                 }
             ],
-            "description": "Hey <@{{ticket.customer_id}}>, once your payment is received, your assigned freelancer <@{{ticket.freelancer_id}}> will be ready to start working on your request."
+            "description": "Please select your designated freelancer before proceeding with your request, <@{{ticket.customer_id}}>."
         }
     ]
 }
