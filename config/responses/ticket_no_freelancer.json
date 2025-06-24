@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "No Freelancer",
+            "color": 15750742,
+            "description": "We apologize, but at this time, either no freelancer is available for this task, or we don't have any freelancers for this task at all.",
+            "thumbnail": {
+                "url": "{{ images.ticket_no_freelancer_Icon }}"
+            }
+        }
+    ]
+}
