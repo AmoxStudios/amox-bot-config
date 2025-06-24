@@ -1,0 +1,28 @@
+{
+    "embeds": [
+        {
+            "thumbnail": {
+                "url": "{{ images.offer_thread_accepted_Icon }}"
+            },
+            "footer": {
+                "text": "AMOX Studios s.r.o.",
+                "icon_url": "{{ images.Logo_Full_Red }}"
+            },
+            "title": "Offer Thread Closed",
+            "color": 14631519,
+            "fields": [
+                {
+                    "name": "{{ ticket_channel.name }}",
+                    "value": "{{ ticket_channel.mention }}",
+                    "inline": false
+                },
+                {
+                    "name": "{{ thread.name }}",
+                    "value": "{{ thread.mention }}",
+                    "inline": false
+                }
+            ],
+            "description": "Your offer thread has been closed."
+        }
+    ]
+}
