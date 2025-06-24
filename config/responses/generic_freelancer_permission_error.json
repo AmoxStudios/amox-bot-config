@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Insuficcient Permissions",
+            "color": 15750742,
+            "description": "Sorry, but you do not have permission to do that!",
+            "thumbnail": {
+                "url": "{{ images.generic_freelancer_permission_error_Icon }}"
+            }
+        }
+    ]
+}
