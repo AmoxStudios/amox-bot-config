@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "ERROR - Generic",
+            "color": 15750742,
+            "description": "There was an error while trying to perform that action!\n`{{ error }}`",
+            "thumbnail": {
+                "url": "{{ images.error }}"
+            }
+        }
+    ]
+}
