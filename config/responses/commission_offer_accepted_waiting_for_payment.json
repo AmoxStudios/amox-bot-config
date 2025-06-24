@@ -1,0 +1,19 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Order Accepted",
+            "color": 15462486,
+            "description": "The order has been accepted and is now awaiting payment. Please pay for the order as soon as possible; once paid, the freelancer may begin work.\n\nThe amount that is due:\n\n# `{{ amount }}`\nThis amount is being held by AMOX in escrow until the order has been fulfilled by the freelancer. \n\n**Thank you for choosing AMOX Studios.** 🩷",
+            "thumbnail": {
+                "url": "{{ images.ticket_monitoring_payment_reminder_Icon }}"
+            },
+            "image": {
+                "url": "{{ images.footer }}"
+            }
+        }
+    ]
+}
