@@ -9,7 +9,7 @@
                 "icon_url": "{{ images.Logo_Full_Red }}"
             },
             "title": "Offer Thread Closed",
-            "color": 14631519,
+            "color": 15750742,
             "fields": [
                 {
                     "name": "{{ ticket_channel.name }}",
