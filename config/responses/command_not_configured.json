@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Command Not Configured",
+            "color": 15750742,
+            "description": "Sorry, it appears that this command has not been set up.\nPlease let <@&1227342571945332777> know.",
+            "thumbnail": {
+                "url": "{{ images.command_broken }}"
+            }
+        }
+    ]
+}
