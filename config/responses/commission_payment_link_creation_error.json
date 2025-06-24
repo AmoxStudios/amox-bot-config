@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "ERROR - Payment Link",
+            "color": 15750742,
+            "description": "There was an error when trying to create a payment link!\n`{{ error }}`",
+            "thumbnail": {
+                "url": "{{ images.error }}"
+            }
+        }
+    ]
+}
