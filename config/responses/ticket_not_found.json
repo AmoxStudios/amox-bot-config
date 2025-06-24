@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Incorrect Use",
+            "color": 15750742,
+            "description": "Ticket was not found.",
+            "thumbnail": {
+                "url": "{{ images.ticket_not_found_Icon }}"
+            }
+        }
+    ]
+}
