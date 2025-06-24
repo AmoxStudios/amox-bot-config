@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Command Disabled",
+            "color": 15750742,
+            "description": "Sorry, you don't seem to have enough permissions to run this command.\nIf you feel like this is a mistake, please let <@&1227342571945332777> know.",
+            "thumbnail": {
+                "url": "{{ images.generic_freelancer_permission_error_Icon }}"
+            }
+        }
+    ]
+}
