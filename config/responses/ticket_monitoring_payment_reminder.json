@@ -14,7 +14,7 @@
             "fields": [
                 {
                     "name": "Order Ticket",
-                    "value": "<#{{ ticket.id }}>",
+                    "value": "<#{{ ticket.id }}>\n`{{ ticket.id }}`",
                     "inline": false
                 },
                 {
