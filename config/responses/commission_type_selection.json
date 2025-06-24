@@ -12,7 +12,8 @@
             "title": "AMOX Content Order",
             "image": {
                 "url": "{{ images.Footer }}"
-            }
+            },
+            "color": 14631519
         }
     ]
 }

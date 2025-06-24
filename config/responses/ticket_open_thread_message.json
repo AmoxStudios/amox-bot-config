@@ -1,0 +1,42 @@
+{
+    "embeds": [
+        {
+            "thumbnail": {
+                "url": "{{ images.ticket_open_thread_message_Icon }}"
+            },
+            "footer": {
+                "text": "AMOX Studios s.r.o.",
+                "icon_url": "{{ images.Logo_Full_Red }}"
+            },
+            "title": "Ticket Open Thread Message",
+            "color": 14631519,
+            "fields": [
+                {
+                    "name": "Ticket Channel",
+                    "value": "{{ ticket_channel }}",
+                    "inline": true
+                },
+                {
+                    "name": "‎ ",
+                    "value": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ",
+                    "inline": true
+                },
+                {
+                    "name": "‎ ",
+                    "value": "‎ ",
+                    "inline": true
+                },
+                {
+                    "name": "Thread",
+                    "value": "{{ thread }}",
+                    "inline": false
+                },
+                {
+                    "name": "Freelancer",
+                    "value": "{{ freelancer_id }}",
+                    "inline": false
+                }
+            ]
+        }
+    ]
+}
