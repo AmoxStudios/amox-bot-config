@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "FAQ Exists",
+            "color": 15750742,
+            "description": "The {{ faq }} already exists!",
+            "thumbnail": {
+                "url": "{{ images.faq_already_exists_Icon }}"
+            }
+        }
+    ]
+}
