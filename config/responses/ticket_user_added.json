@@ -1,0 +1,28 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "User Added",
+            "color": 5697627,
+            "thumbnail": {
+                "url": "{{ images.ticket_user_added_Icon }}"
+            },
+            "description": "{{ user }} has successfully been added.",
+            "fields": [
+                {
+                    "name": "Ticket",
+                    "value": "{{ ticket }}",
+                    "inline": true
+                },
+                {
+                    "name": "Channel",
+                    "value": "{{ channel }}",
+                    "inline": true
+                }
+            ]
+        }
+    ]
+}
