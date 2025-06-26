@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Role Update Fail",
+            "color": 15750742,
+            "description": "Sorry, but there was some issue!\nThe role update was **not** successful.",
+            "thumbnail": {
+                "url": "{{ images.failed_to_update_linked_roles_Icon }}"
+            }
+        }
+    ]
+}
