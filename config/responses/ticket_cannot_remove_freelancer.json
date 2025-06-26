@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Cannot Remove!",
+            "color": 15750742,
+            "description": "Sorry, but you cannot remove the freelancer from {{ channel }}.",
+            "thumbnail": {
+                "url": "{{ images.ticket_cannot_remove_freelancer_Icon }}"
+            }
+        }
+    ]
+}
