@@ -10,7 +10,7 @@
             "thumbnail": {
                 "url": "{{ images.freelancer_reonboarded_Icon }}"
             },
-            "description": "<@{{ user.id }}> has already been onboarded."
+            "description": "<@{{ freelancer_id }}> is already in use!"
         }
     ]
 }
