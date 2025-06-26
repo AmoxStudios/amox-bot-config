@@ -1,0 +1,29 @@
+{
+    "content": "<@{{ freelancer.discord_id }}>",
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Order Types",
+            "color": 5697627,
+            "thumbnail": {
+                "url": "{{ images.freelancer_modify_commission_type_success_Icon }}"
+            },
+            "description": "You have successfully modified your order types. Good luck!",
+            "fields": [
+                {
+                    "name": "Previous Types",
+                    "value": "{{ old }}",
+                    "inline": true
+                },
+                {
+                    "name": "New Types",
+                    "value": "{{ new_types }}",
+                    "inline": true
+                }
+            ]
+        }
+    ]
+}
