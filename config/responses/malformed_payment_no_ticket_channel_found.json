@@ -1,0 +1,54 @@
+{
+    "content": "{{ session.id }} | <@&1227342571945332777>",
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Payment - No Metadata",
+            "color": 15750742,
+            "thumbnail": {
+                "url": "{{ images.malformed_payment_no_ticket_channel_found_Icon }}"
+            },
+            "description": "Payment of **{{ usd_value }}** has been received; however, no ticket channel was found.",
+            "fields": [
+                {
+                    "name": "Ticket",
+                    "value": "<#{{ ticket.id }}>\n`{{ ticket.id }}`",
+                    "inline": true
+                },
+                {
+                    "name": "Customer",
+                    "value": "<@{{ ticket.customer_id }}>",
+                    "inline": true
+                },
+                {
+                    "name": "Freelancer",
+                    "value": "<@{{ ticket.freelancer_id }}>",
+                    "inline": true
+                },
+                {
+                    "name": "Deadline",
+                    "value": "{{ ticket.deadline }}",
+                    "inline": true
+                },
+                {
+                    "name": "Status",
+                    "value": "{{ ticket.current_status }}",
+                    "inline": true
+                },
+                {
+                    "name": "Amount Total",
+                    "value": "{{ session.amount_total }}",
+                    "inline": false
+                },
+                {
+                    "name": "URL",
+                    "value": "{{ session.url }}",
+                    "inline": false
+                }
+            ]
+        }
+    ]
+}
