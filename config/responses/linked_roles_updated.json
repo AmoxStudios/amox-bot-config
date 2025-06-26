@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Role Update Success",
+            "color": 5697627,
+            "description": "You have successfully updated your roles.",
+            "thumbnail": {
+                "url": "{{ images.linked_roles_updated_Icon }}"
+            }
+        }
+    ]
+}
