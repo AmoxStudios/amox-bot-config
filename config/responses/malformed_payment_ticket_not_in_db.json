@@ -1,0 +1,29 @@
+{
+    "content": "{{ session.id }}",
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Payment - No Metadata",
+            "color": 15750742,
+            "thumbnail": {
+                "url": "{{ images.malformed_payment_ticket_not_in_db_Icon }}"
+            },
+            "description": "Payment of **{{ usd_value }}** has been received; however, it is not in the database.",
+            "fields": [
+                {
+                    "name": "Amount Total",
+                    "value": "{{ session.amount_total }}",
+                    "inline": false
+                },
+                {
+                    "name": "URL",
+                    "value": "{{ session.url }}",
+                    "inline": false
+                }
+            ]
+        }
+    ]
+}
