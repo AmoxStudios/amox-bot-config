@@ -1,0 +1,17 @@
+{
+    "content": "<@{{ interaction.user.id }}>",
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Order Types",
+            "color": 5697627,
+            "thumbnail": {
+                "url": "{{ images.freelancer_onboard_select_commission_type_Icon }}"
+            },
+            "description": "Please select order types!"
+        }
+    ]
+}

@@ -10,7 +10,7 @@
             "thumbnail": {
                 "url": "{{ images.freelancer_reonboarded_Icon }}"
             },
-            "description": "<@{{ freelancer.discord_id }}> has already been onboarded."
+            "description": "<@{{ freelancer.discord_id }}> has already been offboarded."
         }
     ]
 }
