@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Amount Too High!",
+            "color": 15750742,
+            "description": "The following feature is currently disabled. We are sorry.\n\n{{ features }} ",
+            "thumbnail": {
+                "url": "{{ images.features_disabled_Icon }}"
+            }
+        }
+    ]
+}
