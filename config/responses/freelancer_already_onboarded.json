@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Onboarded",
+            "color": 15750742,
+            "thumbnail": {
+                "url": "{{ images.freelancer_reonboarded_Icon }}"
+            },
+            "description": "<@{{ user.id }}> has already been onboarded."
+        }
+    ]
+}
