@@ -1,5 +1,5 @@
 {
-    "content": "@{{ user }}",
+    "content": "<@{{ user.id }}>",
     "embeds": [
         {
             "footer": {

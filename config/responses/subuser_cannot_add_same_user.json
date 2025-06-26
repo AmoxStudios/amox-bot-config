@@ -1,4 +1,5 @@
 {
+    "content": "<@{{ user.id }}>",
     "embeds": [
         {
             "footer": {
@@ -10,7 +11,7 @@
             "thumbnail": {
                 "url": "{{ images.ticket_user_added_Icon }}"
             },
-            "description": "{{ user }}, you cannot add the same user..."
+            "description": "{{ user.display_name }}, you cannot add the same user..."
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "content": "<@{{ user.id }}>",
+    "content": "<@{{ interaction.user.id }}>",
     "embeds": [
         {
             "footer": {
@@ -9,9 +9,9 @@
             "title": "Freelancer Unavailable",
             "color": 15750742,
             "thumbnail": {
-                "url": "{{ images.freelancer_not_active_Icon }}"
+                "url": "{{ images.user_already_subuser_for_other_freelancer_Icon }}"
             },
-            "description": "Freelancer <@{{ freelancer.discord_id }}> is currently not active."
+            "description": "<@{{ subuser.id }}> is already a subuser under <@{{ other_freelancer.discord_id }}>"
         }
     ]
 }
