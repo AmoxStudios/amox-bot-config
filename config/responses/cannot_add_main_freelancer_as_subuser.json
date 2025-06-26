@@ -1,0 +1,17 @@
+{
+    "content": "<@{{ interaction.user.id }}>",
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Incorrect Use",
+            "color": 15750742,
+            "thumbnail": {
+                "url": "{{ images.user_already_subuser_for_other_freelancer_Icon }}"
+            },
+            "description": "Main freelancer, <@{{ freelancer.discord_id }}>, cannot be added as a subuser."
+        }
+    ]
+}
