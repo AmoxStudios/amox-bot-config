@@ -1,0 +1,28 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "FAQ Deleted",
+            "color": 5697627,
+            "description": "Successfully deleted FAQ!",
+            "thumbnail": {
+                "url": "{{ images.faq_already_exists_Icon }}"
+            },
+            "fields": [
+                {
+                    "name": "FAQ ID",
+                    "value": "{{ faq_id }}",
+                    "inline": true
+                },
+                {
+                    "name": "Name",
+                    "value": "{{ friendly_name }}",
+                    "inline": true
+                }
+            ]
+        }
+    ]
+}
