@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Cannot Modify!",
+            "color": 15750742,
+            "description": "We apologize, however {{ channel }} cannot be currently modified as it's not in progress.",
+            "thumbnail": {
+                "url": "{{ images.features_disabled_Icon }}"
+            }
+        }
+    ]
+}
