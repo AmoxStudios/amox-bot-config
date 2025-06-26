@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Amount Too Low!",
+            "color": 15750742,
+            "description": "Please use amounts only above $5.",
+            "thumbnail": {
+                "url": "{{ images.invalid_payment_amount_not_a_number_Icon }}"
+            }
+        }
+    ]
+}
