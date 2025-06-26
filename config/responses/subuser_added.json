@@ -1,0 +1,29 @@
+{
+    "content": "<@{{ interaction.user.id }}>",
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Incorrect Use",
+            "color": 5697627,
+            "thumbnail": {
+                "url": "{{ images.user_already_subuser_for_other_freelancer_Icon }}"
+            },
+            "description": "<@{{ subuser.id }}> has been added as a subuser to <@{{ freelancer.discord_id }}>.",
+            "fields": [
+                {
+                    "name": "Sub accounts",
+                    "value": "{{ freelancer.discord_ids }}",
+                    "inline": true
+                },
+                {
+                    "name": "Active?",
+                    "value": "{{ freelancer.is_active }}",
+                    "inline": true
+                }
+            ]
+        }
+    ]
+}
