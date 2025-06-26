@@ -1,0 +1,16 @@
+{
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Not Found",
+            "color": 15750742,
+            "thumbnail": {
+                "url": "{{ images.customer_exclusive_command_Icon }}"
+            },
+            "description": "The customer was not found.\nAre you sure the name is correct?"
+        }
+    ]
+}
