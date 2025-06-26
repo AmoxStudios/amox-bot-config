@@ -1,0 +1,17 @@
+{
+    "content": "@{{ user }}",
+    "embeds": [
+        {
+            "footer": {
+                "icon_url": "{{ images.Logo_Full_Red }}",
+                "text": "AMOX Studios s.r.o."
+            },
+            "title": "Incorrect Use",
+            "color": 15750742,
+            "thumbnail": {
+                "url": "{{ images.ticket_user_added_Icon }}"
+            },
+            "description": "The freelancer was not found."
+        }
+    ]
+}
