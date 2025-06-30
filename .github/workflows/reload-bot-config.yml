@@ -1,0 +1,15 @@
+name: Notify on Commit
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  reload-bot-config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sends a GET request to the API to reload its config
+        run: |
+          curl -G "${{ secrets.ENDPOINT_URL }}" \
+            --data-urlencode "api_key=${{ secrets.API_KEY }}"
