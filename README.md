@@ -12,7 +12,6 @@
 |  ticket_monitoring_deadline_passed_management  |  ticket  |
 |  ticket_monitoring_in_progress_check_in  |  ticket  |
 |  ticket_monitoring_review_reminder  |  ticket  |
-|  ticket_monitoring_support_inactivity  |  ticket  |
 |  ticket_closed  |  ticket  |
 |  transcript_ticket_thread  |  transcript_url, thread  |
 |  dm_transcript_ticket  |  transcript_url, ticket  |
@@ -20,7 +19,6 @@
 |  transcript_ticket_channel_no_member  |  transcript_url, ticket  |
 |  command_not_in_text_channel  |  -  |
 |  ticket_not_found  |  -  |
-|  command_not_in_support_ticket  |  -  |
 |  ticket_no_freelancer  |  -  |
 |  generic_freelancer_permission_error  |  -  |
 |  command_not_configured  |  command_name, command_id,   |
