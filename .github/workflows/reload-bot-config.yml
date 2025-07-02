@@ -12,4 +12,4 @@ jobs:
       - name: Sends a GET request to the API to reload its config
         run: |
           curl -G "${{ secrets.ENDPOINT_URL }}" \
-            --data-urlencode "api_key=${{ secrets.API_KEY }}"
+            -H "X-API-Key: ${{ secrets.API_KEY }}"
