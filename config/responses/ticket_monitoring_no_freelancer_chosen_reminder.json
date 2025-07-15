@@ -19,7 +19,7 @@
                 },
                 {
                     "name": "Order Status",
-                    "value": "{{ ticket.current_status }}",
+                    "value": "{{ ticket.status }}",
                     "inline": false
                 }
             ],

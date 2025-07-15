@@ -1,0 +1,254 @@
+{
+    "ticket_monitoring": {
+        "check_interval": 100000,
+        "in_progress_checkup": 60,
+        "review_reminder": 60,
+        "no_freelancer_chosen_reminder": 60,
+        "freelancer_chosen_no_payment_reminder": 60
+    },
+
+    "ui_component_config": {
+        "default_modal": {
+            "type": "modal",
+            "component": {
+                "title": "Open a Ticket",
+                "components": [
+					{
+						"label": "Input Field",
+						"style": 1,
+						"custom_id": "input_field"
+					}
+                ]
+            }
+        },
+        "commission_offer_details": {
+            "type": "modal",
+            "component": {
+                "title": "Please enter the details of your offer",
+                "components": [
+                    {
+						"label": "Input Field",
+						"style": 1,
+						"custom_id": "input_field"
+                    }
+                ]
+            }
+        },
+        "ticket_opener_order": {
+            "type": "button",
+            "component": {
+                "style": "gray",
+                "label": "Order"
+            }
+        },
+        "create_ticket_commission": {
+            "type": "button",
+            "component": {
+                "style": "red",
+                "label": "Create Ticket"
+            }
+        },
+        "tag_selector_dropdown": {
+            "type": "select",
+            "component": {
+                "options": [],
+                "placeholder": "Select the tags to apply to this category.",
+                "max_items": 5
+            }
+        },
+        "commission_type_selector_dropdown": {
+            "type": "select",
+            "component": {
+                "options": [],
+                "placeholder": "Select the commission types for this developer.",
+                "max_items": 25,
+                "min_items": 1
+            }
+        },
+        "create_commission_request_modal": {
+            "type": "modal",
+            "component": {
+                "title": "Create Commission Request",
+                "components": [
+                    {
+						"label": "Budget",
+						"style": 1,
+						"min_length": 1,
+						"max_length": 7,
+						"placeholder": "What is your budget for this commission? Enter a number between 5 and 10000. Use '.' for decimals.",
+                        "regex_pattern": "price",
+                        "custom_id": "budget"
+                    },
+                    {
+						"label": "Deadline (YYYY-MM-DD)",
+						"style": 1,
+						"min_length": 10,
+						"max_length": 10,
+						"placeholder": "Please enter a description of the commission you would like to create.",
+                        "regex_pattern": "date",
+                        "custom_id": "deadline"
+                    },
+                    {
+						"label": "Brief commission outline",
+						"style": 2,
+						"min_length": 30,
+						"placeholder": "Describe the commission in as much detail as possible.",
+                        "custom_id": "description"
+                    }
+                ]
+            }
+        },
+        "create_commission_offer_modal": {
+            "type": "modal",
+            "component": {
+                "title": "Create Commission Offer",
+                "components": [
+                    {
+						"label": "Price",
+						"style": 1,
+						"min_length": 1,
+						"max_length": 7,
+						"placeholder": "How much would you like to charge for this commission between 5 - 10000? Use '.' for decimals.",
+						"value": "10",
+                        "regex_pattern": "price",
+                        "custom_id": "price"
+                    },
+                    {
+						"label": "Deadline (YYYY-MM-DD)",
+						"style": 1,
+						"min_length": 10,
+						"max_length": 10,
+						"placeholder": "Please enter the deadline you can complete this commission by. (Format: YYYY-MM-DD)",
+                        "regex_pattern": "date",
+                        "custom_id": "deadline"
+                    }
+                ]
+            }
+        }
+    },
+
+    "tags": {
+        "unturned_clothing": {"name": "Unturned clothing", "emoji": "🧪"},
+        "unturned_maps": {"name": "Unturned maps", "emoji": "🧪"},
+        "unturned_plugins": {"name": "Unturned plugins", "emoji": "🧪"},
+        "unturned_buildings": {"name": "Unturned buildings", "emoji": "🧪"},
+        "unturned_animations": {"name": "Unturned animations", "emoji": "🧪"},
+        "unturned_vegetation": {"name": "Unturned vegetation", "emoji": "🧪"},
+        "unturned_ui": {"name": "Unturned UI", "emoji": "🧪"},
+        "unturned_animals": {"name": "Unturned animals", "emoji": "🧪"},
+        "unturned_vehicles": {"name": "Unturned vehicles", "emoji": "🧪"},
+
+        "3d_modelling": {"name": "3d Modelling", "emoji": "🧪"},
+        "unity": {"name": "Unity", "emoji": "🧪"},
+        "photoshop": {"name": "Photoshop", "emoji": "🧪"},
+        "bots": {"name": "Discord Bots", "emoji": "🧪"}
+    },
+
+    "default_ticket_permissions": {
+        "commission": {
+            "customer": {"view_channel": true, "send_messages": true},
+            "freelancer": {"view_channel": true, "send_messages": true, "manage_messages": true},
+            "roles": {
+                "1343974074317275167": {
+                    "view_channel": true,
+                    "send_messages": true,
+                    "manage_messages": true
+                }
+            }
+        },
+        "management": {
+            "customer": {},
+            "freelancer": {},
+            "roles": {}
+        },
+        "closed": {
+            "customer": {},
+            "freelancer": {},
+            "roles": {}
+        },
+        "open": {
+            "customer": {},
+            "freelancer": {},
+            "roles": {}
+        }
+    },
+
+    "modules": {
+        "bot.error_handler": true,
+        "bot.ticket_system": true,
+        "bot.freelancer_management": true,
+        "api.module": true,
+        "bot.payments": true,
+        "bot.linked_roles": true
+    },
+
+    "command_config": {
+        "command name": {
+            "enabled": true,
+            "cooldown": 123,
+            "cooldown_bypass_roles": "array[integer | string] | * | @everyone",
+            "allowed_roles": "array[integer | string] | * | @everyone"
+        },
+        "second": {
+            "enabled": false,
+            "cooldown": 0,
+            "cooldown_bypass_roles": "@everyone",
+            "allowed_roles": [123, "management"]
+        },
+        "third": {
+            "enabled": true,
+            "cooldown": 10,
+            "cooldown_bypass_roles": [],
+            "allowed_roles": "*"
+        },
+        "test": {
+            "enabled": true,
+            "cooldown": 10,
+            "cooldown_bypass_roles": [],
+            "allowed_roles": "*"
+        }
+    },
+
+    "stripe": {
+        "product_description": "desc",
+        "product_name": "name",
+        "default_currency_symbol": "$",
+        "minimum_amount": 5,
+        "maximum_amount": 10000
+    },
+
+    "snowflakes": {
+        "main_guild_id": 1288943216007184515,
+        "extra_guild_ids": [],
+        "channels": {
+            "error_logs": 1345759298508161067,
+            "malformed_payments": 1345759298508161067,
+            "ticket_creator_forum": 1354413197670613135,
+            "management": 1363647346562302073,
+            "file_logging_forum": 1391084701040771203
+        },
+        "roles": {
+            "bot_manager": 1288943216195801099,
+            "manager": 1288943216195801099,
+            "freelancer": 1288943216195801099
+        },
+        "users": {
+            "akos": 603880226631450624,
+            "loco": 363391316412989451
+        }
+    },
+    "file_logging": {
+        "categories": {
+            "Images": ["jpg", "jpeg", "png", "webp", "gif", "bmp", "tiff", "tif", "ico", "heic", "avif", "svg"],
+            "Executable": ["exe", "msi", "bat", "sh", "apk", "bin", "out", "app", "jar", "run"],
+            "Videos": ["mp4", "mov", "avi", "mkv", "webm", "flv", "wmv", "mpeg", "mpg", "m4v"],
+            "Plugins": ["dll"],
+            "Scripts": ["cs", "js", "ts", "py", "cpp", "c", "h", "java", "html", "css", "json", "jsonc", "xml", "php", "lua", "ini", "toml", "yaml", "bat", "sh"],
+            "Archives": ["zip", "rar", "7z", "tar", "gz", "bz2", "xz", "lz", "zst"],
+            "Documents": ["pdf", "doc", "docx", "txt", "rtf", "md", "odt", "xls", "xlsx", "ppt", "pptx", "csv", "tsv"],
+            "Audio": ["mp3", "wav", "ogg", "flac", "aac", "m4a", "wma", "aiff", "opus"]
+        }
+    }
+}
+
+
