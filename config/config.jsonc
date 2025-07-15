@@ -225,7 +225,8 @@
             "malformed_payments": 1345759298508161067,
             "ticket_creator_forum": 1354413197670613135,
             "management": 1363647346562302073,
-            "file_logging_forum": 1391084701040771203
+            "file_logging_forum": 1391084701040771203,
+            "payments": 1394743361834844229
         },
         "roles": {
             "bot_manager": 1288943216195801099,
